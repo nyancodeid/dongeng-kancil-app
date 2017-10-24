@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <title>Blank App Designer Packaged Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Recommended location for your JavaScript libraries -->
+        <!-- These library references (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <!--
+  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
+  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
+  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
+  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
+-->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
+    </head>
+
+    <body>
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <div class="upage images" id="mainpage">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_1" data-uib="layout/header" data-ver="0">
+                    <h2>Pada Zaman Dahulu</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_81_10">
+                    <div class="list-group widget uib_w_2 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="1">
+                        <a class="list-group-item allow-badge widget uib_w_3 trans" data-uib="twitter%20bootstrap/list_item" data-ver="1">
+                            <h4 class="list-group-item-heading">Dongeng</h4>
+
+                            <p class="list-group-item-text">Kancil dan Buaya</p>
+                        </a>
+                        <a class="list-group-item allow-badge widget uib_w_4 trans" data-uib="twitter%20bootstrap/list_item" data-ver="1">
+                            <h4 class="list-group-item-heading">Dongeng</h4>
+                            <p class="list-group-item-text">Kancil dan Harimau</p>
+                        </a>
+                        <a class="list-group-item allow-badge widget uib_w_5 trans" data-uib="twitter%20bootstrap/list_item" data-ver="1">
+                            <h4 class="list-group-item-heading">Dongeng</h4>
+                            <p class="list-group-item-text">Kancil dan Siput</p>
+                        </a>
+                    </div>
+                    <div class="list-group widget uib_w_6 d-margins" data-uib="twitter%20bootstrap/list_group" data-ver="1">
+                        <a class="list-group-item allow-badge widget uib_w_7 trans" data-uib="twitter%20bootstrap/list_item" data-ver="1">
+                            <h4 class="list-group-item-heading">Dongeng</h4>
+
+                            <p class="list-group-item-text">Kancil Mencuri Mentimun</p>
+                        </a>
+                        <a class="list-group-item allow-badge widget uib_w_8 trans" data-uib="twitter%20bootstrap/list_item" data-ver="1">
+                            <h4 class="list-group-item-heading">Dongeng</h4>
+                            <p class="list-group-item-text">Kancil dan Monyet</p>
+                        </a>
+                        <a class="list-group-item allow-badge widget uib_w_9 trans" data-uib="twitter%20bootstrap/list_item" data-ver="1">
+                            <h4 class="list-group-item-heading">Dongeng</h4>
+                            <p class="list-group-item-text">Kancil dan Beruang</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="upage hidden images gm" id="pagestory1">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_10" data-uib="layout/header" data-ver="0">
+                    <h2>Kancil dan Buaya</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_49_31">
+                    <div class="btn-group uib-bs-flex widget uib_w_12 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                        <button class="btn widget uib_w_13 trans btn-sm btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1">Home</button>
+
+                        <button class="btn widget uib_w_15 btn-sm btn-primary trans" data-uib="twitter%20bootstrap/button" data-ver="1">Next</button>
+                    </div>
+                    <div class="tarea widget uib_w_11 d-margins" data-uib="media/text" data-ver="0" name="uib_w_11">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <h2 style="font-style:italic;"><cite><strong><var><small><kbd>Alkisah, buaya dan kancil tinggal di wilayah yang sama. Sudah lama buaya mengincar kancil untuk di jadikan santapannya. Namun, kancil selalu bisa menghindari kejarannya. Ia adalah hewan yang banyak akal sehingga buaya selalu kesulitan untuk menangkapnya.</kbd></small></var></strong></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>Meski selalu lolos dari kejaran buaya, namun lama-lama kancil merasa khawatir juga. Karena itu, ia pindah rumah ke daerah lain untuk menjauhi buaya. Ia tinggal dibawah sebuah pohon besar di hilir sungai. Awalnya buaya merasa bingung karena tidak melihat kancil di tempat biasanya. Maka ia pun mencarinya ke sana-kemari, bertanya kepada para hewan yang ditemuinya.</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>"Oh, kancil pindah ke pohon di dekat hilir sungai," kata burung kecil yang ditanya oleh buaya. Tentu saja buaya senang mendengar informasi itu. Segera saja ia pergi ke tempat yang dimaksud oleh si burung. Ia sudah tidak sabar lagi untuk memburu si kancil. Ia benar-benar merasa penasaran, ingin menikmati daging kancil yang sudah lama ia idam-idamkan. Setelah berhasil menemukan tempatnya, buaya pun pindah ke sana juga. Namun, kancil masih belum mengetahuinya.</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>Selama berhari-hari buaya mengawasi kancil. Ia mempelajari kebiasaan kancil seraya merancang strategi untuk menangkapnya. Dari pengamatannya itu, tahulah si buaya bahwa si kancil sering pergi ke sebuah pulau kecil yang ditumbuhi pohon-pohon apel di dekat tempat tinggal kancil. Untuk sampai ke sana, si kancil biasa menyeberang sungai dengan melompati beberapa batu besar yang ada di antara tempat tinggal kancil dengan pulau tersebut.</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>"Aku punya ide!" seru buaya. Ketika kancil pergi ke pulau kecil, buaya bersembunyi di balik batu di tengah sungai. Ia menunggu kancil melompat ke batu itu.</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>Hari itu kancil puas memakan buah-buahan yang ada di pulau kecil. Kemudian ia pun pulang dengan riang. Ia melompat dari sisi sungai ke batu-batu untuk sampai di rumahnya. Namun setibanya di&nbsp; tengah sungai, ia melihat bayangan dari batu yang hendak dilompatinya tampak Iebih tinggi dari biasanya.</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>Akal cerdas si kancil Segera menangkap bahwa ada sesuatu yang tidak beres.</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>"Jangan-jangan ada buaya di balik batu itu?" batin kancil, curiga. Setelah berpikir, ia berhasil mendapat akal. Ia berteriak ke arah batu, "Hai batu! Gimana kabarmu?"</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>Hening. Tidak ada jawaban. Kancil kemudian bertanya lagi. "Ada apa batu sahabatku? Biasanya kau menjawab sapaanku."</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>"Oh, jadi biasanya batu ini berbicara?" batin Buaya yang sedang berdiam diri di batu itu. "Kalau begitu aku harus pura-pura menjawabnya supaya kancil tidak curiga."</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>"Halo juga, kancil," jawab buaya.</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>Kancil terkikik dalam hati melihat kebodohan buaya. Lantas ia berkata, "Jadi kau ada di situ ya, Buaya? Tak kusangka, kau mengejarku sampai ke sini."</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>Buaya kaget. Rupanya penyamarannya sudah ketahuan. Sadarlah ia bahwa kancil telah mengakalinya. Ia benar-benar kesal dengan kebodohannya sendiri.</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>"Ya, aku mengejarmu ke sini karena ingin memakanmu!" sahut buaya, jengkel.</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>"Baiklah. Kali ini kau berhasil menjebakku," jawab kancil sambil mempersiapkan siasat berikutnya. "Bukalah mulutmu lebar-lebar agar aku bisa melompat ke dalamnya."</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>Kancil benar-benar cerdik. Ia tahu bahwa mata buaya akan tertutup saat buaya membuka mulutnya lebar-lebar. Dan sesaat setelah buaya membuka mulutnya, kancil segera melompat ke atas kepala buaya, lalu melompati batu batu lainnya dengan lincah, dan setelah tiba di tepi sungai segera memanjat pohon besar tempat tinggalnya.</kbd></small></var></cite></h2>
+
+                            <h2 style="font-style:italic;"><cite><var><small><kbd>Lagi-lagi selamatlah kancil dari kejaran buaya. Itu semua berkat kecerdasannya yang jauh melampaui buaya. Sementara buaya terpaksa gigit jari karena lagi-lagi gagal menangkap kancil yang sudah lama diincarnya.</kbd></small></var></cite></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage hidden gh br" id="pagestory6">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_20" data-uib="layout/header" data-ver="0">
+                    <h2>Kancil dan Beruang</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_83_33">
+                    <div class="btn-group uib-bs-flex widget uib_w_37 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                        <button class="btn widget uib_w_38 btn-sm btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1">Home</button>
+                        <button class="btn widget uib_w_40 btn-sm btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1">Log out</button>
+                    </div>
+                    <div class="tarea widget uib_w_36 d-margins" data-uib="media/text" data-ver="0" name="uib_w_36">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Ada seekor Beruang Cokelat yang bertubuh besar dan tinggi. Ia selalu terpesona saat mendengar burung-burung berkicau sangat riang. Beruang Cokelat ingin bisa berkicau seperti burung-burung itu, tapi ia tidak mampu untuk melakukannya.
+                                Suatu hari ia tersesat di ladang dekat perkampungan warga. Ia sangat takjub melihat seorang anak gembala meniup seruling dengan merdu sekali. Beruang kembali masuk hutan dan menceritakan pengalamannya pada si Kancil.
+                                <br>
+                                <br>Suatu ketika si Kancil berjalan-jalan. Sampailah ia di rerumpunan pohon bambu. Karena lelah ia beristirahat di tempat tersebut. Tiba-tiba ia mendengar derit suara bambu yang cukup merdu walau tidak semerdu suara seruling
+                                gembala yang diceitakan oleh Beruang Cokelat.
+                                <br>
+                                <br>Berpikirlah ia untuk berbuat jahil pada Beruang Cokelat. Berhari-hari ia mencari Beruang, akhirnya ia menemukan Beruang Cokelat yang sedang berendam disebuah sungai.
+                                <br>
+                                <br>"Cil ! yuk berendam, udara disini sangat panas nih.,"
+                                <br>"Hai Beruang...," kata Kancil.
+                                <br>"Beruang apa kau suka musik? jika iya, mari ikut denganku akan kutunjukkan padamu suatu musik yang sangat merdu sekali"
+                                <br>"Wah, benar tidak nih Cil? Ayo berangkat!" kata Beruang.
+                                <br>
+                                <br>Dari kejauhan Beruang melihat Kancil seolah-olah sedang mempermainkan seruling dari bambu.
+                                <br>
+                                <br>"Cil daripada aku hanya melihat saja, ajarilah aku mempermainkan seruling itu," kata Beruang sambil mendekati Kancil.
+                                <br>
+                                <br>"Boleh, julurkan lidahmu, tempelkan ke celah seruling bambu yang panjang ini," kata Kancil.
+                                <br>
+                                <br>Kancil segera bersiul memanggil angin. Setelah beberapa saat angin berhembus dan menggoyang-goyakan pohon bambu. Bambu berderit, menjepit ujung lidah beruang. Beruang menjerit kesakitan untunglah ia segera mencabut lidahnya.
+                                <br>
+                                <br>Sadarlah Beruang Cokelat, bahwa Kancil sengaja menipunya. Tapi ia tidak marah, sebab derit suara bambu itu terdengar merdu.
+                                <br>
+                                <br>Begitu merdunya derit suara bambu itu sehingga Beruang Cokelat terlelap tidur di bawah pohon bambu itu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage hidden mn" id="pagestory5">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_19" data-uib="layout/header" data-ver="0">
+                    <h2>Kancil dan Monyet</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_84_2">
+                    <div class="btn-group uib-bs-flex widget uib_w_26 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                        <button class="btn widget uib_w_27 btn-sm btn-primary trans" data-uib="twitter%20bootstrap/button" data-ver="1">Home</button>
+
+                        <button class="btn widget uib_w_29 trans btn-sm btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1">Next story</button>
+                    </div>
+                    <div class="tarea widget uib_w_30 d-margins" data-uib="media/text" data-ver="0" name="uib_w_30">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Pada suatu pagi yang cerah dan indah, si kancil adalah yang terkenal hewan yang sangat cerdik dan pintar sedang berjalan melewati hutan yang hijau. Kancil kala itu berjalan dengan muka ditegakkan. Namun tiba-tiba, ada sesuatu
+                                yang membuat kancil berhenti berjalan. Kancil itu merasa perutnya sakit dan terdengar bunyi "kriuuuk klukkkk klukkkk"</p>
+
+                            <p>
+                                <br>Wahhh....Ternyata Kancil lupa belum makan pagi, sehingga perutnya kelaparan. "aduuuh duhhh, lapar sekali aku? saya sedang malas mencari makanan, kemana? aduh kemana saya harus mencari???oh itu rumah monyet!!!!"&nbsp;
+                                <br>segera kancil berjalan menuju rumah monyet dengan harapan ada makanan dirumah monyet.&nbsp;
+                                <br>
+                                <br>Dirumah sang monyet, terbaringlah si monyet yang sedang sakit gigi karena monyet lupa membersihkan gigi setelah makan malam. Di meja makan, terdapat tiga buah pisang matang berwarna kuning,&nbsp;
+                                <br>
+                                <br>Terdengar suara pintu diketuk-ketuk&nbsp; "monyetttttt...monyet....bangun monyet!!!" ternyata suara si kancil dari luar rumah "iya...siapa ya? ada apa pagi-pagi begini? ooh kamu kancil?"
+                                <br>
+                                <br>Monyet lalu membukakan pintu sembari terlaget-kaget kenapa sepagi ini si kancil datang kerumahnya.&nbsp;
+                                <br>"Monyet, saya minta pisang, saya kelaparan, kamukan pintar memanjat dan mudah mendapatkan makanan, oh itu ada pisang..."&nbsp; Kancil segera masuk kedalam rumah tanpa permisi saat melihat ada pisang di meja makan monyet&nbsp;
+                                <br>&nbsp;
+                            </p>
+
+                            <p>&nbsp;</p>
+
+                            <p>
+                                <br>
+                                <br>"tapiii....tunggu dulu...." sergah si monyet&nbsp;
+                                <br>
+                                <br>"apa? kamu cari pisang lagi monyet, kamu pintar memanjat, saya sudah tidak punya tenanga untuk mencari makanan..." jawab si kancil&nbsp;
+                                <br>
+                                <br>"tapi itu buat makan pagi, siang dan sore kancil, hari ini saya sedang tidak enak badan...kan...." jelas si Monyet. Tapi dasar kancil, dia berlari keluar rumah dan mengupas kulit pisang dan melemparnya kedepan, dan tidak
+                                berapa lama...&nbsp;
+                                <br>
+                                <br>"aduuuuuh....aw...aw....aduh....ooooohhhh" terdengar teriakan kancil&nbsp;
+                                <br>
+                                <br>Rupanya si Kancil terpeleset oleh kulit pisang yang dia lempar kedepan dan saat kancil berjalan dia tidak melihat ada kulit pisang yang dia lempar, terinjak dan Kancil terpeleset lalu jatuh dan menggelinding masuk ke parit
+                                dengan air yang begitu dingin dipagi hari.
+                                <br>
+                                <br>"Brrrrr...brrr...aduh dingin sekali, sudah terpeleset, jatuh menggelinding pula kedalam parit...dinginnnn" Kancil meratapi nasibnya dipagi hari setelah merebut buah pisang milik Monyet.&nbsp;
+                                <br>
+                                <br>Alangkah buruk nasib kancil dipagi hari itu ya sobat? merebut makanan teman sendiri itu adalah hal yang kurang baik, apalagi teman tersebut hanya memiliki makanan yang cukup untuk persediaannya.
+                                <br>
+                                <br>Membuang sampah di sembarang tempat juga perbuatan yang kurang baik, sebaiknya membuang sampah adalah ditempat sampah, agar sampah tersebut tidak mengotori jalan.
+                                <br>
+                                <br>Akibat dari perbuatannya itu si kancil yang malang terluka dan sakit parah, sungguh tidak nyaman berada disepanjang hari dengan menahan sakit karena perbuatannya yang tidak bagus itu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage hidden br" id="pagestory4">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_18" data-uib="layout/header" data-ver="0">
+                    <h2>Kacil Mencuri Mentimun</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col" id="page_85_71">
+                    <div class="btn-group uib-bs-flex widget uib_w_42 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                        <button class="btn widget uib_w_43 btn-sm btn-primary trans" data-uib="twitter%20bootstrap/button" data-ver="1">Home</button>
+                        <button class="btn widget uib_w_45 btn-sm btn-primary trans" data-uib="twitter%20bootstrap/button" data-ver="1">Next story1</button>
+                    </div>
+                    <div class="tarea widget uib_w_41 d-margins" data-uib="media/text" data-ver="0" name="uib_w_41">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Pagi yang sangat cerah. Matahari bersinar dengan indah. Pak Tani bersiap-siap pergi ke ladang dengan sangat gembira dengan memanggul pacul.</p>
+
+                            <p>‘’Aku akan pergi ke ladang untuk memeriksa kebun timunku, mungkin saja besok sudah bisa dipanen.’’</p>
+
+                            <p>Sesampainya di kebun timun Pak Tani sangat terkejut. Buah timun di kebunnya banyak yang rusak.</p>
+
+                            <p>‘’Aduh siapa yang berani merusak buah timunku ini. Mengapa harus dirusak? Aku bukan petani yang pelit, jika ada orang yang mau timunku ambil saja. Tapi tidak untuk dirusak’’</p>
+
+                            <p>&nbsp;</p>
+
+                            <p>Fabel Cerita Rakyat si kancil sedang asik menyantap mentimun</p>
+
+                            <p>Dengan hati muram Pak Tani pulang ke rumah. Ia menduga-duga hewan apakah yang suka makan mentimun.</p>
+
+                            <p>‘’Pasti hewan yang merusak dan mencuri kebun mentimun ku adalah si Kancil’’. Gumam Pak Tani.</p>
+
+                            <p>Pak Tani mencari akal untuk menjebak si Kancil. Pak Tani akhirnya berhasil mencari akal untuk menjebak si Kancil dengan membuat orang-orangan yang di beri pelekat sangat kuat. Menjelang sore orang-orangan itu sudah selesai
+                                dibuat dan di bawa ketengah kebun timun untuk di pasang.</p>
+
+                            <p>‘’ Aku tahu kancil hewan yang sangat cerdik, dia bisa melakukan apa saja untuk mencuri timunku’’.</p>
+
+                            <p>Ternyata dugaan Pak Petani benar, malam harinya Kancil datang untuk mengambil mentimun. Kancil tertawa melihat orang-orangan yang di buat Pak Tani.</p>
+
+                            <p>‘’Haha.. hanya orang-orangan, siapa takut?’’</p>
+
+                            <p>&nbsp;</p>
+
+                            <p>kancil memukul orang-orangan sawah</p>
+
+                            <p>Kancil hanya melewati orang-orangan itu. Ia memakan timun yang muda-muda. Ternyata tak banyak yang di makan si Kancil. Hanya 3 buah timun ia sudah merasa kenyang. Ia juga tidak merusak timun yang lainnya.</p>
+
+                            <p>Setelah makan timun. Kancil menghampiri orang-orangan yang dibuat Pak Tani, dan sifat jail si Kancil. Ia pukul orang-orangan itu dengan kaki depannya.</p>
+
+                            <p>‘’Aduh… kenapa melekat seperti ini? Kaki ku tidak dapat di gerakkan!’’ Kancil sangat kaget.!</p>
+
+                            <p>‘’Hei orang-orangan jelek. Lepaskan kakiku. Kalau tidak, akan kupukul lagi kau!’’</p>
+
+                            <p>Kancil memukul orang-orangan itu dengan kaki yang satu lagi.</p>
+
+                            <p>‘’Plak!’’ kini kedua kakinya menempel erat pada baju orang-orangan itu.</p>
+
+                            <p>Pelekat yang di pasang Pak Petani di baju orang-orangan itu sangat kuat. Kancil tak bisa melepaskan diri. Sekuat tenaga ia berusaha tetapi tidak berhasil. Semalaman Kancil menangis.</p>
+
+                            <p>Pagi harinya Pak Tani datang.</p>
+
+                            <p>‘’Ku tangkap kau Kancil. Dasar biang kerok. Kau boleh mengambil makan timunku Cil. Tapi tidak untuk merusak buah yang lain.’’</p>
+
+                            <p>‘’Ampun Pak Tani. Bukan aku yang merusak timunmu, aku hanya makan 2-3 buah timun. Dan perutku sudah merasa sangat kenyang.</p>
+
+                            <p>Pak Tani tidak percaya dengan perkataan si Kancil. Leher si Kancil di ikat dan di seret Pak Tani ke rumahnya.</p>
+
+                            <p>&nbsp;</p>
+
+                            <p>ireng anjing pak tani heran melihat kancil sedang di kurung</p>
+
+                            <p><ins><!-- dongengceritarakyat kotak besar --> </ins>
+                            </p>
+
+                            <p>&nbsp;</p>
+
+                            <p>Sesampainya di rumah Pak Tani, Kancil langsung diletakkan di dalam kurungan ayam.</p>
+
+                            <p>‘’Kancil . Batu ini sangat kuat. Kau tak dapat meloloskan diri dari sini. Aku akan pergi sebentar ke pasar untuk membeli bumbu sate.’’</p>
+
+                            <p>‘’Ampunilah aku Pak Tani, jangan sate aku. Dagingku pahit dan tidak enak.” Si Kancil merengek meminta ampun.</p>
+
+                            <p>Pada saat Pak Tani pergi ke pasar untuk membeli bumbu sate, ada seekor anjing yang merupakan peliharaan Pak Tani datang menghampiri kurungan si Kancil. Anjing hitam itu bernama Ireng.</p>
+
+                            <p>‘’Kenapa kau di kurung?’’ Tanya si Ireng.</p>
+
+                            <p>‘’Apa kau tak tau Reng?’’ Kancil membalas pertanyaan Si Ireng Anjing milik Pak Tani.</p>
+
+                            <p>‘’Katakan ada apa sebenernya Cil?’’</p>
+
+                            <p>‘’Begini Reng, aku ini akan di jadikan menantu oleh Pak Tani. Mangkannya Pak Tani pergi ke pasar untuk membeli makanan yang lezat-lezat untukku calon menantunya.’’</p>
+
+                            <p>‘’Hah..? Kamu itu tidak pantas Cil, badan mu kecil. Lebih baik aku saja yang menjadi menantu Pak Tani. Aku sudah bertahun-tahun menjadi peliharaannya’’</p>
+
+                            <p>‘’Tapi Pak Tani sudah memilih aku Reng. Sudah sana pergilah kau Ireng!’’</p>
+
+                            <p>Si Ireng tiba-tiba menggerang marah, ‘’Cil, kalau kau tidak mau aku gantikan sekarang juga batu yang ada di atas kurangan itu akan aku dorong dan lehermu akan ku gigit sampai putus.’’</p>
+
+                            <p>‘’Wah.. Jangan gitu dong !’’</p>
+
+                            <p>‘’Mau apa tidak?’’</p>
+
+                            <p>‘’Baik-baik aku turuti keinginanmu.’’</p>
+
+                            <p>&nbsp;</p>
+
+                            <p>Si Kancil berlari sekuat tenaga menghindari kejaran si ireng dan pak tani</p>
+
+                            <p>Si Ireng mendorong batu hingga terjatuh, kurungan itu terbuka dan Kancil keluar dari kurungannya. Sedangkan Ireng menggantikkan Kancil masuk ke dalam kurungan.</p>
+
+                            <p>‘’Selamat Ireng, sebentar lagi kau akan menjadi menantu Pak Tani.’’ Kata Kancil sambil berlari kencang.</p>
+
+                            <p>Sesaat kemudian Pak Tani datang. Ia sangat kaget melihat Kancil yang berada di kurungan berubah menjadi Ireng anjing peliharannya.</p>
+
+                            <p>‘’Hormat saya calon mertua.’’ Kata anjing dengan gembira.</p>
+
+                            <p>‘Calon Mertua katamu? Hey kamu kemanakan si Kancil.’’ Pak Tani bertanya dengan nada gusar.</p>
+
+                            <p>‘’Sudah pergi ke hutan Pak Tani !’’</p>
+
+                            <p>‘’Kau sungguh-sungguh mau menjadi menantuku?’’</p>
+
+                            <p>‘’Benar sekali tuan.’’ jawab Si Ireng dengan gembira.</p>
+
+                            <p>‘’Sekarang keluarlah dari kurungan itu, lau duduklah yang manis dan pejamkan mata. Aku akan segera memanggil putriku didalam rumah.’’</p>
+
+                            <p>Ireng segera menuruti permintaan dari Pak Tani. Dia sangat gembira karena akhirnya dia bisa menjadi keluarga dari Pak Tani.</p>
+
+                            <p>‘’Ini hadiah untukmu !’’ teriak Pak Tani memukul kepala dan punggung si Anjing.</p>
+
+                            <p>‘’Tungguuuuuu…! Bleg ! bleg !. ampuuuunnn..!’’</p>
+
+                            <p>Si Ireng menjerit dan melarikkan diri. Dia baru sadar bahwa telah terjebak dalam tipu muslihat si Kancil. Ia sangat marah karena ditipu si Kancil. ‘’ Awas kau Kancil jika nanti ketemu akan ku gigit kau!’’ Ireng yang sangat
+                                marah karena di tipu si Kancil. Seluruh badannya masih terasa sakit setelah di pukul Pak Tani. Anjing berlari sangat kencang mengejar si Kancil.</p>
+
+                            <p>Kancil sudah mencoba berlari sekencang yang dia bisa. Namun kecepatan si Kancil memang belum bisa dibandingkan dengan Ireng yang merupakan anjing pemburu, maka dalam beberapa saat Si Ireng sudah bisa berada di belakang.</p>
+
+                            <p>‘’Wah gawat. Ireng sudah berada dibelakangku,’’ kata Kancil dalam hati. ’’Aku harus segera bersembunyi.’’</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage hidden images sp" id="pagestory3">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_17" data-uib="layout/header" data-ver="0">
+                    <h2>Kancil dan Siput</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_86_32">
+                    <div class="btn-group uib-bs-flex widget uib_w_31 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                        <button class="btn widget uib_w_32 btn-sm btn-primary trans" data-uib="twitter%20bootstrap/button" data-ver="1">Home</button>
+
+                        <button class="btn widget uib_w_34 trans btn-sm btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1">Next Story</button>
+                    </div>
+                    <div class="tarea widget uib_w_35 d-margins" data-uib="media/text" data-ver="0" name="uib_w_35">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>Pada suatu hari si kancil nampak ngantuk sekali. Matanya serasa berat sekali untuk dibuka. “Aaa....rrrrgh”, si kancil nampak sesekali menguap. Karena hari itu cukup cerah, si kancil merasa rugi jika menyia-nyiakannya. Ia mulai
+                                berjalan-jalan menelusuri hutan untuk mengusir rasa kantuknya. Sampai di atas sebuah bukit, si Kancil berteriak dengan sombongnya, “Wahai penduduk hutan, akulah hewan yang paling cerdas, cerdik dan pintar di hutan ini.
+                                Tidak ada yang bisa menandingi kecerdasan dan kepintaranku”.
+                                <br>
+                                <br>Sambil membusungkan dadanya, si Kancil pun mulai berjalan menuruni bukit. Ketika sampai di sungai, ia bertemu dengan seekor siput. “Hai kancil !”, sapa si siput. “Kenapa kamu teriak-teriak? Apakah kamu sedang bergembira?”,
+                                tanya si siput. “Tidak, aku hanya ingin memberitahukan pada semua penghuni hutan kalau aku ini hewan yang paling cerdas, cerdik dan pintar”, jawab si kancil dengan sombongnya.
+                                <br>
+                                <br>Siput“Sombong sekali kamu Kancil, akulah hewan yang paling cerdik di hutan ini”, kata si Siput. “Hahahaha......., mana mungkin” ledek Kancil. “Untuk membuktikannya, bagaimana kalau besok pagi kita lomba lari?”, tantang
+                                si Siput. “Baiklah, aku terima tantanganmu”, jawab si Kancil. Akhirnya mereka berdua setuju untuk mengadakan perlombaan lari besok pagi.
+                                <br>
+                                <br>Setelah si Kancil pergi, si siput segera mengumpulkan teman-temannya. Ia meminta tolong agar teman-temannya berbaris dan bersembunyi di jalur perlombaan, dan menjawab kalau si kancil memanggil.
+                                <br>
+                                <br>Akhirnya hari yang dinanti sudah tiba, kancil dan siput pun sudah siap untuk lomba lari. “Apakah kau sudah siap untuk berlomba lari denganku”, tanya si kancil. “Tentu saja sudah, dan aku pasti menang”, jawab si siput. Kemudian
+                                si siput mempersilahkan kancil untuk berlari dahulu dan memanggilnya untuk memastikan sudah sampai mana si siput.
+                                <br>
+                                <br>Kancil berjalan dengan santai, dan merasa yakin kalau dia akan menang. Setelah beberapa langkah, si kancil mencoba untuk memanggil si siput. “Siput....sudah sampai mana kamu?”, teriak si kancil. “Aku ada di depanmu!”, teriak
+                                si siput. Kancil terheran-heran, dan segera mempercepat langkahnya. Kemudian ia memanggil si siput lagi, dan si siput menjawab dengan kata yang sama.”Aku ada didepanmu!”
+                                <br>
+                                <br>Akhirnya si kancil berlari, tetapi tiap ia panggil si siput, ia selalu muncul dan berkata kalau dia ada depan kancil. Keringatnya bercucuran, kakinya terasa lemas dan nafasnya tersengal-sengal. Kancil berlari terus, sampai
+                                akhirnya dia melihat garis finish. Wajah kancil sangat gembira sekali, karena waktu dia memanggil siput, sudah tidak ada jawaban lagi. Kancil merasa bahwa dialah pemenang dari perlombaan lari itu.
+                                <br>
+                                <br>Betapa terkejutnya si kancil, karena dia melihat si siput sudah duduk di batu dekat garis finish. “Hai kancil, kenapa kamu lama sekali? Aku sudah sampai dari tadi!”, teriak si siput. Dengan menundukkan kepala, si kancil
+                                menghampiri si siput dan mengakui kekalahannya. “Makanya jangan sombong, kamu memang cerdik dan pandai, tetapi kamu bukanlah yang terpandai dan cerdik”, kata si siput. “Iya, maafkan aku siput, aku tidak akan sombong lagi”,
+                                kata si kancil.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage hidden images gm" id="pagestory2">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_16" data-uib="layout/header" data-ver="0">
+                    <h2>Kancil dan Harimau</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col" id="page_87_18">
+                    <div class="btn-group uib-bs-flex widget uib_w_21 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                        <button class="btn widget uib_w_22 btn-sm btn-primary trans" data-uib="twitter%20bootstrap/button" data-ver="1">Home</button>
+
+                        <button class="btn widget uib_w_24 trans btn-sm btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1">Next story</button>
+                    </div>
+                    <div class="tarea widget uib_w_25 d-margins" data-uib="media/text" data-ver="0" name="uib_w_25">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p>"Suatu hari seekor Harimau terjebak oleh perangkap para Pemburu. Ia di masukkan kedalam kandang yang sangat kuat. Kandang tersebut di kunci dengan gembok. Sementara si Pemburu kembali ke dalam hutan mencari hewan lainnya. Pemburu
+                                menyuruh seekor Kera untuk mengawasi Harimau dalam kandang. ‘’ Ingat, jangan sampai lepas Harimau ini!’’. Kata si Pemburu setelah itu langsung kembali ke dalam hutan.</p>
+
+                            <p>Harimau melihat yang mengawasinya hanya seekor Kera, ia pun mendekat dan berusaha merayu agar si Kera dapat membebaskannya, dengan alasan ingin menghirup udara segar sebentar.</p>
+
+                            <p>‘’ Maap Harimau! Aku tidak berani melawan perintah majikanku!’’ kata si Kera.</p>
+
+                            <p>‘’ Hanya sebentar saja ko. Aku pasti langsung kembali ke dalam kandang ini, kau tidak usah khawatir teman! Jika kau melepaskanku meskipun hanya sekejap, aku akan mengumumkan untuk tidak ada yang memangsa bangsa Kera. Sehingga
+                                kau bebas keluar masuk hutan’’ jawab si Harimau menyakinkan.</p>
+
+                            <p>Mendengar yang di katakana Harimau, Kera pun mulai terpengaruh namun ia masih takut. Tak lama kemudian ia langsung mengambil kunci dan membukakannya. Harimau langsung keluar dengan sangat senang.</p>
+
+                            <p>‘’ Ayo, sekarang kita pergi jalan-jalan untuk mencari udara segar. Aku akan memperkenalkanmu dengan teman-temanku, agar tidak ada yang berani mengganggumu!’’ Ujar si Harimau.</p>
+
+                            <p>‘’ Baiklah. Tapi, jangan terlalu lama. Aku sangat takut majikanku segera kembali.’’ Kata Kera.</p>
+
+                            <p>‘’ Kau tenang saja!’’ kata Harimau.</p>
+
+                            <p>Kera hanya mengikuti ajakan Harimau. Tanpa terasa ia dan Harimau berjalan cukup jauh dari kandang.</p>
+
+                            <p>‘’ Sepertinya kita berjalan sudah sangat jauh. Ayo kembali ke kandang!’’ kata Kera.</p>
+
+                            <p>‘’ Kau tidak perlu khawatir. Sebentar lagi kita akan kembali.’’ Jawabnya</p>
+
+                            <p>‘’ Harimau, waktunya kita kembali.’’ Ajak Kera.</p>
+
+                            <p>‘’ Ah sebentar lagi! Kita belum bertemu dengan teman-temanku.’’</p>
+
+                            <p>‘’ Ingat janjimu! Kau aku ijinkan keluar hanya untuk mencari udara segar! Ayo sekarang kita kembali ke tempat majikanku. Mungkin majikanku sudah kembali.’’</p>
+
+                            <p>‘’ Hahaa. Dasar kau Kera bodoh! sudah berhari-hari aku ada dalam kandang, kau dan majikanmu sama sekali tidak memberiku makan, sekarang perutku sangat lapar. Dan aku akan aku jadikanmu sebagai santapanku siang ini.’’ harimau
+                                langsung menerkam si Kera.</p>
+
+                            <p>‘’ Kau sudah berjanji!’’ protes Kera.</p>
+
+                            <p>‘’ Hahaa, aku tidak pernah berjanji. Kau yang terlalu bodoh gampang aku tipu! Saat ini aku kelaparan dan ingin mengisi perutku!’’ kata Harimau</p>
+
+                            <p>‘’ Dasar kau pembohong! Ini tidak adil.’’ Sahut Kera.</p>
+
+                            <p>‘’ Hahaa. Tidak adil kau bilang? Aku bisa melakukan apapun di sini. Siapapun tahu Harimaulah raja hutan! Hahaa’’ ujarnya.</p>
+
+                            <p>‘’ Aku sudah menolongmu, sekarang kau mau mencelakaiku?’’</p>
+
+                            <p>‘’ Hahaa, aku tidak peduli!’’ jawabnya.</p>
+
+                            <p>Beberapa menit kemudian, Kancil lewat sambil bersenandung. Namun, ia berhenti sejenak karena mendengar Kera meminta tolong. Ia pun langsung melihat, ternyata Kera yang sedang di terkam Harimau. Ia mengerti akal busuk Harimau.</p>
+
+                            <p>Kancil pun menghampiri mereka dan bertanya.</p>
+
+                            <p>‘’ Sedang apa kalian di sini? Kenapa kau menerkam Kera?’’ kancil pura-pura tidak tahu.</p>
+
+                            <p>‘’ Haha, kenapa kau ada disini Cil? Kau tidak tau aku sedang apa?’’ kata Harimau.</p>
+
+                            <p>‘’ Aku kan baru saja sampai. Bagaimana aku tahu! Sekarang kalian jelaskan apa yang kalian lakukan.’’ Jawabnya santai.</p>
+
+                            <p>Kera langsung menjelaskan situasinya. Mendengar penjelasan Kera, Kancil langsung mempunyai ide. Namun, ia pura-pura tidak mengerti dan meminta mereka memeragakan langsung kejadian tersebut. Kancil langsung mengajak Kera dan
+                                Harimau kembali ke kandang. Awalnya Harimau sangat menolak. Namun, Kancil terus menyakinkannya. Akhirnya, Harimau setuju.</p>
+
+                            <p>‘’ Baiklah. Setelah tiba di kandang aku akan memakan kau dan Kera bodoh ini!’’</p>
+
+                            <p>Ketika tiba di tempat majikan Kera. Kancil meminta Harimau memeragakan kejadian tersebut.</p>
+
+                            <p>‘’ Ayo Harimau, kau peragakan. Supaya aku dapat mengerti dan kau segera memangsaku.’’ Kata si Kancil</p>
+
+                            <p>Kera dan Harimau setuju. Harimau langsung masuk kedalam kandang. Setelah Harimau masuk kedalam kandang. Kera langsung menggembok kembali kandang tersebut.</p>
+
+                            <p>‘’ Akhirnya selesai juga masalah ini’’ kata si Kancil senang.</p>
+
+                            <p>‘’ Selesai? Apa yang kau maksud Cil?’’ protes Harimau.</p>
+
+                            <p>Kancil sama sekali tidak mempedulikan Harimau. Ia langsung menghampiri Kera.</p>
+
+                            <p>‘’ Hei Kera, Lain kali kau jangan mudah terpengaruh rayuan binatang! Apalagi Harimau.’’ Ujarnya .</p>
+
+                            <p>‘’ Baiklah Cil. Lalu bagaimana dengan Harimau?’’ Tanya Kera.</p>
+
+                            <p>‘’ Kau akan membuka gemboknya lagi? Setelah kau lepaskan ia langsug menerkamu lagi? Jawab Kancil.</p>
+
+                            <p>‘’ Tentu saja tidak Cil. Aku tidak akan mengulangi kebodohanku lagi. Aku akan mematuhi perinta majikanku saja.’’</p>
+
+                            <p>‘’ Baiklah. Sekarang ayo kita pergi. Kau jangan dekat-dekat dengannya. Jangan dengarkan rayuannya biarkan dia berada di dalam kandang.’’ Kata Kancil.</p>
+
+                            <p>‘’ Hei Kancil. Mau kemana kau? Lepaskan aku.’’ Harimau menggeram sangat marah.</p>
+
+                            <p>‘’ Ada apa kau memanggilku Harimau?’’ Tanya Kancil mendekat</p>
+
+                            <p>‘’ Kau sudah menipuku! Ini tidak adil.’’ Jawab Harimau sangat marah.</p>
+
+                            <p>‘’ Yang kau lakukan apa adil? Kau sudah di tolong Kera tapi kau malah mengancam akan memakannya! Apakah itu adil? Kata Kancil santai.</p>
+
+                            <p>‘’ Kancil. Aku akan membunuhmu!’’ jawabnya semakin marah.</p>
+
+                            <p>‘’ Ayo coba saja jika kau bisa!’’</p>
+
+                            <p>Sebelum Kancil melanjutkan perjalanannya. Kera mengucapkan terima kasih karena Kancil sudah menolongnya. Kera memberikan tiga buah Pisang. Kancil menerimanya dan langung pergi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="upage hidden sz" id="pagepesan">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_46" data-uib="layout/header" data-ver="0">
+                    <h2>Pesan Dongeng</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left">
+                    <div class="tarea widget uib_w_47 d-margins" data-uib="media/text" data-ver="0" name="uib_w_47">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container"></div>
+                    </div>
+                    <button class="btn widget uib_w_50 d-margins btn-sm btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1"><i class="glyphicon glyphicon-remove button-icon-left" data-position="left"></i>Exit</button>
+                    <div class="tarea widget uib_w_48 d-margins" data-uib="media/text" data-ver="0" name="uib_w_48">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container"></div>
+                    </div>
+                    <div class="tarea widget uib_w_49 d-margins" data-uib="media/text" data-ver="0" name="uib_w_49">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <p><strong>Kancil dan Buaya</strong>
+                            </p>
+
+                            <p>&nbsp;<strong><em>gunakan akal pikiranmu walaupun disaat paling sulit sekalipun, karena masalah sesulit apapun pasti ada jalan keluarnya jika kita berusaha.</em></strong>
+                            </p>
+
+                            <p>&nbsp;</p>
+
+                            <p><strong>Kancil dan Harimau</strong>
+                            </p>
+
+                            <p><strong><em>Pesan moral dari Fabel Dongeng Cerita Kancil dan Harimau adalah tepati janji yang telah kita ucapkan maka kita akan dihargai oleh orang lain. Orang yang suka berbohong pasti dibenci oleh orang disekitarnya.</em></strong>
+                            </p>
+
+                            <p><strong>Kancil dan Siput</strong>
+                            </p>
+
+                            <p><strong><em>Jangan pernah menyepelekan dan menyombongkan diri sendiri kepada seseorang walau kita lebih pintar darinya.</em></strong>
+                            </p>
+
+                            <p>&nbsp;</p>
+
+                            <p><strong>Kancil mencuri mentimun</strong>
+                            </p>
+
+                            <ol>
+                                <li><strong><em>&nbsp;Janganlah kita melakukan kejahatan seperti mencuri karena sepandai-pandainya kita menyembunyikan kejahatan pasti suatu saat akan ketahuan juga.</em></strong>
+                                </li>
+                                <li><strong><em>Sebelum bertindak berpikirlah yang matang, jangan sampai menyesal dikemudian hari seperti si Ireng anjing milik Pak Tani.</em></strong>
+                                </li>
+                            </ol>
+
+                            <p><strong><em>Kancil dan Beruang</em></strong>
+                            </p>
+
+                            <p><strong><em>Berbohong dalam hal kebaikan itu tidak berdosa tapi alangkah baiknya jika kita tidak berbohong dalam hal apapun.</em></strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
